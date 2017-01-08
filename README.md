@@ -10,7 +10,7 @@ The Chinese Restaurant Model is based on idea that there is a restaurant with an
 
 Intuitively, this model will have the following properties :
 
-1) The more people (data points) there are at a table (cluster), the more likely it is that people (new data points) will join it. 
+1) The more people (data points) there are at a table (cluster), the more likely it is that people (new data points) will join it.
 2) There’s always a small probability that someone joins an entirely new table (i.e., a new group is formed).
 3) The probability of a new group depends on αα. So we can think of αα as a dispersion parameter that affects the dispersion of our datapoints. The lower alpha is, the more tightly clustered our data points; the higher it is, the more clusters we have in any finite set of points.
 
