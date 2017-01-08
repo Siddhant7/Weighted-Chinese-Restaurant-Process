@@ -6,6 +6,7 @@ Before going in the details of the model, I would like to tell our final goal. D
 
 # Chinese Restaurant Process
 
+The Chinese Restaurant Model is based on idea that there is a restaurant with an infinite number of tables. At each table there are an infinite number of seats. The first customer arrives and sits down at a table.  The second customer then arrives and selects a table. However, the customer selects the table that the first customer is currently sitting with probability alpha/(1+alpha) or selects a new table with 1/(1+alpha). This continues on to the (n+1)th customer where they select a table that a current customer is sitting with probability n{k}/(n+alpha).
 
 
 
