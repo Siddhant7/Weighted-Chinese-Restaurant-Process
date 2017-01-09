@@ -18,4 +18,8 @@ Intuitively, this model will have the following properties :
 
 This is just maximum likelihood, then why are we talking about Chinese restaurants? This is because, in CRP, we can always squeeze in 1 more table. Or one can say that the posterior of a DP is CRP.
 
-# Weighted Chinese Restaurant Process
+# Introduction and Representation of our problem in CRP terminology
+
+I have implemented the modified version of CRP(weighted CRP), following the research paper titled: "Automatic discovery of cognitive skills to improve the prediction of student learning" Lindsey et al. In this paper, the author tries to automatically discover the skills needed in a discipline. So they took various exercises and tried determinining which skill or skills are required to solve those exercises. They also took data in which expert has identified, for each exercise, a specific skill which is required for its solution (the expert labeling). Instaed of ignoring the expert labels(which traditional techniques have done), they incorporate it into the prior.
+
+The incoming customers are exercises, tables are the skills, and the affiliation(or bias) for each table is our expert labelling. So our goal is to assign exercises one by one to the skill it belongs to. One major assumption used in this paper is that each exercise is affiliated with only 1 skill.
