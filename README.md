@@ -37,3 +37,16 @@ The incoming customers are exercises, tables are the skills, and the affiliation
 -> To avoid confusion, I have named the list of new skills which are assigned as "table", and the list of expert labelled skills as "skill". Also, the index of the table list represents each exercise of our data matrix(same index). Let the incoming exercise has the expert label of skill "a". The basic idea of this function is that it assigns a probability to a skill by the multiplying the number of exercises already assigned to that skill, and a bias term. The bias term is higher for a table "y" if "a" is the most common affiliation among exercises at table "y". These biases are the weights for each table, hence the term "Weigted CRP".
 
 ->Keep on iterating this until we reach to the last exercise. We will get a new skill-exercises cluster every time we run this process, as there is randomness involved. So, CRP is a distribution over partitions. 
+
+# Plots and inferences
+
+-> The plot in line number "" shows that as the value of alpha is increased significantly, our distribution will tend towards the base distribution, which in our case is uniform distribution.
+
+-> The plot in line number "" shows how the number of clusters changes with increasing values of alpha. As we can see from the line graph, that number of clusters increases with the increased value of alpha, and is approximately distributed as log(alpha).
+
+-> Similarly, the above plot can be seen from a different view point, that is, as the value of alpha increases => number of cluster increases => average number of exercises in each cluster decreases.
+
+# Exchangeable Property and Effect of weights(bias) on the distribution
+
+Now, for a given alpha, what is the probability of any two random exercises to be assigned in the same cluster? Although we have a lengthy solution to this problem, but there is a shortcut! CRP follows exchangeable property, meaning that, the order in which a customer sits does not affect the probability of the final distribution. So, for a fix alpha, the probability of any two exercises i and j being assigned to the same skill will be a constant(by exchangeable property). So replace i by 1, and j by 2. The probability of exercise "1" and exercise "2" occupying the same skill will be same as probability that exercise "2" choose table "1", which is equal to 1/(1+alpha).
+
