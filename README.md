@@ -40,13 +40,13 @@ The incoming customers are exercises, tables are the skills, and the affiliation
 
 # Plots and inferences
 
--> The plot in line number "" shows that as the value of alpha is increased significantly, our distribution will tend towards the base distribution, which in our case is uniform distribution.
+-> The plot in line number "104" shows that as the value of alpha is increased significantly, our distribution will tend towards the base distribution, which in our case is uniform distribution.
 
--> The plot in line number "" shows how the number of clusters changes with increasing values of alpha. As we can see from the line graph, that number of clusters increases with the increased value of alpha, and is approximately distributed as log(alpha).
+-> The plot in line number "118" shows how the number of clusters changes with increasing values of alpha. As we can see from the line graph, that number of clusters increases with the increased value of alpha, and is approximately distributed as log(alpha).
 
 -> Similarly, the above plot can be seen from a different view point, that is, as the value of alpha increases => number of cluster increases => average number of exercises in each cluster decreases.
 
-# Exchangeable Property and Effect of weights(bias) on the distribution
+# Exchangeable Property of CRP
 
 Now, for a given alpha, what is the probability of any two random exercises to be assigned in the same cluster? Although we have a lengthy solution to this problem, but there is a shortcut! CRP follows exchangeable property, meaning that, the order in which a customer sits does not affect the probability of the final distribution. So, for a fix alpha, the probability of any two exercises i and j being assigned to the same skill will be a constant(by exchangeable property). So replace i by 1, and j by 2. The probability of exercise "1" and exercise "2" occupying the same skill will be same as probability that exercise "2" choose table "1", which is equal to 1/(1+alpha).
 
