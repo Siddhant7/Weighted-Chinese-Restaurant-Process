@@ -30,7 +30,7 @@ The incoming customers are exercises, tables are the skills, and the affiliation
 
 -> A crp function is defined, which inputs the expert label data, and the parameter of the model alpha. The first exercise is assigned to a skill "1"(Note that the skills that are being assigned are not labelled skills. These are different from the columns of our matrix, which are labelled). 
 
--> The next exercises come in one by one sequentially from our matrix, and moves inside the first condition of slecting a new skill, with probability alpha/(alpha+n), where n is the total number of exercises already assigned. So, as n increases, the chances are more that the incoming exercise selects an already assigned skill(which intuitively sounds correct too, as the exercise should not choose a new skill, if many skills are already their to choose from).
+-> The next exercises come in one by one sequentially from our matrix, and moves inside the first condition of slecting a new skill, with probability alpha/(alpha+n), where n is the total number of exercises already assigned. So, as n increases, the chances are more that the incoming exercise selects an already assigned skill(which intuitively sounds correct too, as the exercise should not choose a new skill, if many skills are already there to choose from).
 
 -> If the condition above is false, the exercise will now select a new skill. Now the question is which skill should it select. For this purpose, I have defined another function which_table, which inputs data matrix, and the list of already assigned exercises. In this function, we first define our probability distribution of each already available skill, and then return a sample skill from that distribution.
 
