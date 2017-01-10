@@ -159,4 +159,5 @@ for(i in 1:1000){
   }
 }
 count/1000
+1/(1+alpha)
 #probability of 2 exercises being in a same cluster remains same irrespective of index
