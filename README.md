@@ -1,3 +1,5 @@
+I implemented the weighted chinese restaurant process for clustering, used to cluster different exercises on the basis of skills needed to solve them. The paper that I followed is : "Automatic discovery of cognitive skills to improve the prediction of student learning" Lindsey et al.
+
 # Dirichlet Process
 
 Dirichlet Process (DP) is a distribution over probability distributions. It takes two arguments, a concentration parameter and a probability distribution, called the base distribution. It comes under the Nonparametric Bayesian models. By nonparametric, we mean that our distribution doesn't need any parameter. DP can be used for clustering of data when we do not know the number of clusters before hand. 
